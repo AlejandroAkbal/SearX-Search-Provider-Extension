@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "host": "searx.localhost"
+        }
+      }
+    },
+    "condition": {
+      "urlFilter": "||searx-to-localhost.akbal.dev",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "host": "searx.thegpm.org"
+        }
+      }
+    },
+    "condition": {
+      "urlFilter": "||searx.localhost",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    }
+  }
+]
