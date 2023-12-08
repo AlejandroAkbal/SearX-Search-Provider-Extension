@@ -1,0 +1,64 @@
+@import url("https://rsms.me/inter/inter.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Improved defaults */
+@layer base {
+
+    html {
+        @apply bg-base-50 text-base-content;
+    }
+
+    /* https://www.joshwcomeau.com/css/custom-css-reset/#five-font-smoothing-6 */
+    body {
+        @apply font-sans antialiased;
+    }
+
+    /* https://www.joshwcomeau.com/css/custom-css-reset/#three-percentage-based-heights-4 */
+    html, body, #__plasmo {
+        @apply h-full;
+    }
+}
+
+@layer components {
+    /* TODO */
+}
+
+@layer utilities {
+    /*
+    * NOT TO BE USED DIRECTLY AS CSS
+    * IN CLASSES IT SHOULD BE USED AS `focus-visible:focus-outline-util`
+    */
+    .focus-outline-util {
+        @apply outline outline-2 outline-base-content-highlight;
+    }
+
+    /*
+    * NOT TO BE USED DIRECTLY AS CSS
+    * IN CLASSES IT SHOULD BE USED AS `hover:hover-text-util`
+    */
+    .hover-text-util {
+        @apply text-base-content-hover;
+    }
+
+    /*
+    * NOT TO BE USED DIRECTLY AS CSS
+    * IN CLASSES IT SHOULD BE USED AS `hover:hover-bg-util`
+     */
+    .hover-bg-util {
+        @apply bg-base-1000/10;
+    }
+
+    /* https://github.com/reslear/tailwind-scrollbar-hide/blob/main/src/index.js */
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+}
