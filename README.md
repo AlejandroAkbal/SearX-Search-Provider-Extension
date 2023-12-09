@@ -22,8 +22,9 @@ SearX Search Provider Extension
 
 ## Get the extension
 
-[![Chrome Web Store](https://storage.googleapis.com/web-dev-uploads/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/HRs9MPufa1J1h5glNhut.png)](https://chrome.google.com/webstore/detail/kemenddblaeehafanidlkolmdgdeffbp)
-[![Firefox Add-ons](https://blog.mozilla.org/addons/files/2020/04/get-the-addon-fx-apr-2020.svg)](https://addons.mozilla.org/en-US/firefox/addon/cache-disabler/)
+[![Chrome Web Store](https://storage.googleapis.com/web-dev-uploads/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/HRs9MPufa1J1h5glNhut.png)](https://chrome.google.com/webstore/detail/hmbgmokpddhjjncclckdfnolbhfjnoam)
+
+[//]: # ([![Firefox Add-ons]&#40;https://blog.mozilla.org/addons/files/2020/04/get-the-addon-fx-apr-2020.svg&#41;]&#40;https://addons.mozilla.org/en-US/firefox/addon/cache-disabler/&#41;)
 
 ## How it works
 
