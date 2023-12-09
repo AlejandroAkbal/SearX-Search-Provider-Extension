@@ -62,7 +62,10 @@
       }
     },
     "host_permissions": [
-      "<all_urls>"
+      "http://searx-to-localhost.akbal.dev/*",
+      "https://searx-to-localhost.akbal.dev/*",
+      "http://searx.localhost/*",
+      "https://searx.localhost/*"
     ],
     "permissions": [
       "declarativeNetRequest",
