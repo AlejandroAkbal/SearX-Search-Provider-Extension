@@ -41,6 +41,10 @@ _searx-to-localhost.akbal.dev_.
 That's the magic!
 Don't worry about privacy, I don't log any requests, and the extension is open source.
 
+### Known Issues
+
+- Auto-complete does not work. Seems like declarativeNetRequest rules don't take over on autocomplete requests.
+
 ## Getting Started
 
 First, run the development server:

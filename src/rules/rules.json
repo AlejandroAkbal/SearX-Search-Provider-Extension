@@ -14,7 +14,20 @@
       "urlFilter": "||searx-to-localhost.akbal.dev",
       "resourceTypes": [
         "main_frame",
-        "sub_frame"
+        "sub_frame",
+        "stylesheet",
+        "script",
+        "image",
+        "font",
+        "object",
+        "xmlhttprequest",
+        "ping",
+        "csp_report",
+        "media",
+        "websocket",
+        "webtransport",
+        "webbundle",
+        "other"
       ]
     }
   },
@@ -33,7 +46,20 @@
       "urlFilter": "||searx.localhost",
       "resourceTypes": [
         "main_frame",
-        "sub_frame"
+        "sub_frame",
+        "stylesheet",
+        "script",
+        "image",
+        "font",
+        "object",
+        "xmlhttprequest",
+        "ping",
+        "csp_report",
+        "media",
+        "websocket",
+        "webtransport",
+        "webbundle",
+        "other"
       ]
     }
   }
