@@ -1,7 +1,7 @@
 {
   "name": "searx-search-provider",
   "displayName": "SearX Search Provider",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A configurable browser extension that sets SearX as your default search engine.",
   "author": "Alejandro Akbal",
   "homepage_url": "https://github.com/AlejandroAkbal/SearX-Search-Provider-Extension",
@@ -41,19 +41,10 @@
         "id": "searx-search-provider@akbal.dev"
       }
     },
-    "declarative_net_request": {
-      "rule_resources": [
-        {
-          "id": "ruleset_1",
-          "enabled": true,
-          "path": "~rules/rules.json"
-        }
-      ]
-    },
     "chrome_settings_overrides": {
       "search_provider": {
         "name": "SearX",
-        "keyword": "@searxng, @searx, @sx",
+        "keyword": "searxng, searx, @searxng, @searx, @sx",
         "search_url": "https://searx.akbal.dev/search?q={searchTerms}",
         "suggest_url": "https://searx.akbal.dev/autocompleter?q={searchTerms}",
         "favicon_url": "https://searx.akbal.dev/favicon.ico",
@@ -61,6 +52,14 @@
         "encoding": "UTF-8"
       }
     },
+    "web_accessible_resources": [
+      {
+        "resources": [
+          "assets/icon.svg"
+        ],
+        "matches": []
+      }
+    ],
     "host_permissions": [
       "http://searx-to-localhost.akbal.dev/*",
       "https://searx-to-localhost.akbal.dev/*",
@@ -70,6 +69,15 @@
     "permissions": [
       "declarativeNetRequest",
       "declarativeNetRequestFeedback"
-    ]
+    ],
+    "declarative_net_request": {
+      "rule_resources": [
+        {
+          "id": "ruleset_1",
+          "enabled": true,
+          "path": "~rules/rules.json"
+        }
+      ]
+    }
   }
 }
