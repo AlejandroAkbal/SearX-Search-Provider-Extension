@@ -16,6 +16,7 @@ SearX Search Provider Extension
 - **Install and Forget**: Simply install the extension and SearX becomes your default search engine.
 - **Options**: Effortless switch between SearX instances, setting you free from the need to fork or create a new
   extension each time.
+- **Synchronization**: Use your browser's sync to match your options across different devices.
 - **SearXNG compatible**: Works seamlessly with **SearXNG** instances
 
 ![Preview](./assets/store_1200x800.png)

@@ -4,13 +4,9 @@ SearX Search Provider
 
 ## Summary
 
-Switch to a privacy-focused search engine!
-
-Effortlessly configure your SearX instance and enjoy a lighter, faster browsing journey.
+A configurable browser extension that sets SearX as your default search engine.
 
 ## Description
-
-<b>A configurable browser extension that sets SearX as your default search engine.</b>
 
 This extension is designed for those who value their online privacy and are looking for a quick, unobtrusive way to
 revamp their browsing habits.
@@ -21,9 +17,10 @@ Key features include:
 - Install and Forget: Simply install the extension and SearX becomes your default search engine.
 - Options: Effortless switch between SearX instances, setting you free from the need to fork or create a new
   extension each time.
-- <b>SearXNG compatible</b>: Works seamlessly with SearXNG instances
+- Synchronization: Use your browser's sync to match your options across different devices.
+- SearXNG compatible: Works seamlessly with SearXNG instances
 
-<b>SearX is an open-source metasearch engine that respects your privacy.</b>
+SearX is an open-source metasearch engine that respects your privacy.
 By installing our extension, SearX becomes your default search engine, giving you unbiased results with no user
 tracking.
 
