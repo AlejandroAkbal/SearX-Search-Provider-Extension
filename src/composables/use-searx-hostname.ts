@@ -26,7 +26,7 @@ export function useSearxHostname() {
 
     await storage.set(StorageKey.searxHostname, newValue)
 
-    console.debug('watch: searxHostname changed', { newValue, oldValue })
+    console.debug(`Saved ${StorageKey.searxHostname} to storage:`, { newValue, oldValue })
   })
 
   // Watch for changes to the storage
@@ -46,7 +46,7 @@ export function useSearxHostname() {
 
     searxHostname.value = value
 
-    console.debug('Loaded searxHostname from storage', value)
+    console.debug(`Loaded ${StorageKey.searxHostname} from storage:`, { value })
   })
 
   return {
@@ -63,7 +63,7 @@ async function setHostnameRules(searxHostname: string) {
     return
   }
 
-  const result = chrome.declarativeNetRequest.updateDynamicRules({
+  await chrome.declarativeNetRequest.updateDynamicRules({
     removeRuleIds: [3],
     addRules: [
       {
@@ -79,7 +79,23 @@ async function setHostnameRules(searxHostname: string) {
         },
         condition: {
           urlFilter: '||searx.localhost',
-          resourceTypes: ['main_frame', 'sub_frame']
+          resourceTypes: [
+            'main_frame',
+            'sub_frame',
+            'stylesheet',
+            'script',
+            'image',
+            'font',
+            'object',
+            'xmlhttprequest',
+            'ping',
+            'csp_report',
+            'media',
+            'websocket',
+            'webtransport',
+            'webbundle',
+            'other'
+          ]
         }
       }
     ]
