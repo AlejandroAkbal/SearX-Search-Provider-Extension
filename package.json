@@ -47,8 +47,8 @@
         "name": "SearX",
         "keyword": "searxng, searx, @searxng, @searx, @sx",
         "search_url": "https://searx.akbal.dev/search?q={searchTerms}",
-        "suggest_url": "https://searx.be/autocompleter?q={searchTerms}",
-        "favicon_url": "https://searx.be/favicon.ico",
+        "suggest_url": "https://searx.akbal.dev/autocompleter?q={searchTerms}",
+        "favicon_url": "https://searx.akbal.dev/favicon.ico",
         "is_default": true,
         "encoding": "UTF-8"
       }

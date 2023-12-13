@@ -44,8 +44,7 @@ Don't worry about privacy, I don't log any requests, and the extension is open s
 
 ### Known Issues
 
-- ~~Auto-complete does not work. Seems like declarativeNetRequest rules don't take over on autocomplete requests.~~
-  Using searx.be autocomplete as a workaround for this.
+- Auto-complete does not work. Seems like declarativeNetRequest rules don't take over on autocomplete requests.
 - There's no Firefox version yet. For some reason, redirects are not working. (Help wanted!)
 
 ## Getting Started
