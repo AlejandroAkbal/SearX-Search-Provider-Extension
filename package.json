@@ -5,13 +5,15 @@
   "description": "A configurable browser extension that sets SearX as your default search engine.",
   "author": "Alejandro Akbal",
   "homepage_url": "https://github.com/AlejandroAkbal/SearX-Search-Provider-Extension",
-  "engines": {
-    "node": ">=16"
-  },
   "scripts": {
     "dev": "plasmo dev",
-    "build": "rimraf .plasmo build && plasmo build",
-    "package": "plasmo package"
+    "build": "rm -rf ./build && npm run build:all && npm run package:all",
+    "build:all": "npm run build:firefox && npm run build:chrome",
+    "build:firefox": "plasmo build --target=firefox-mv3",
+    "build:chrome": "plasmo build --target=chrome-mv3",
+    "package:all": "npm run package:firefox && npm run package:chrome",
+    "package:firefox": "plasmo package --target=firefox-mv3",
+    "package:chrome": "plasmo package --target=chrome-mv3"
   },
   "dependencies": {
     "@plasmohq/storage": "^1.9.0",
@@ -28,9 +30,8 @@
     "@types/node": "20.10.4",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.32",
-    "prettier": "3.1.1",
+    "prettier": "3.1.0",
     "prettier-plugin-tailwindcss": "^0.5.9",
-    "rimraf": "^5.0.5",
     "tailwindcss": "^3.3.6",
     "typescript": "5.3.3"
   },
